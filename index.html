@@ -19,11 +19,12 @@
 
         </div>
 
+        <!-- Allow the user to select and interval -->
         <div>
-            <label>Select a value to count by:</label>
-            <input type="number" id="userPick"/>
-            <input type="submit" value="Submit"/>
-            <!--<button id="submit">Submit</button>-->
+            <input type="text" id="userPick" value="1">
+            <!-- calls the function which will grab the user entered value -->
+            <button onclick="interval()">Select</button>
+            <button onclick="returnDefault()">Return to Default</button>
         </div>
 
         <script src="assets/js/counter.js"></script>

@@ -8,6 +8,11 @@ function interval() {
     console.log(typeof userInterval);
 }
 
+function returnDefault() {
+    userInterval = 1;
+    document.getElementById('userPick').value = 1;
+}
+
 
 
 function countUp() {
@@ -29,7 +34,7 @@ function countDown() {
 
 function reset() {
     counter = 0;
-    userInterval = 1;
+    //userInterval = 1;
     console.log("counter: " + counter);
     document.getElementById("counter").textContent = counter;
 }
